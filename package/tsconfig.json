@@ -1,0 +1,79 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "jsx": "react",
+    // Target ES2018 for good compatibility with Node.js 12+
+    "target": "ES2018",
+
+    // Use CommonJS for Node.js compatibility
+    "module": "CommonJS",
+
+    // Output directory for compiled files
+    "outDir": "./dist",
+
+    // Root directory of source files
+    "rootDir": "./src",
+
+    // Generate .d.ts declaration files
+    "declaration": true,
+
+    // Generate source maps for declaration files
+    "declarationMap": true,
+
+    // Generate source maps for debugging
+    "sourceMap": true,
+
+    // Remove comments from output
+    "removeComments": true,
+
+    // Enable strict type checking
+    "strict": true,
+
+    // Enable all strict mode family options
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+
+    // Module resolution
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Skip type checking of declaration files
+    "skipLibCheck": true,
+
+    // Include type definitions for Node.js
+    "types": ["node"],
+
+    // Library files to include
+    "lib": ["ES2018"]
+
+    // Experimental decorators (uncomment if needed)
+    // "experimentalDecorators": true,
+    // "emitDecoratorMetadata": true,
+
+    // Path mapping (uncomment and configure if needed)
+    // "baseUrl": "./",
+    // "paths": {
+    //   "@/*": ["src/*"]
+    // }
+  },
+
+  // Include all TypeScript files in src directory
+  "include": ["src/**/*"],
+
+  // Exclude files from compilation
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "**/*.tsx"
+  ]
+}

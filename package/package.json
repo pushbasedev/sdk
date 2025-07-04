@@ -1,0 +1,42 @@
+{
+  "name": "@pushbase/sdk",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pushbasedev/sdk.git",
+    "directory": "package"
+  },
+  "bugs": {
+    "url": "https://github.com/pushbasedev/sdk/issues"
+  },
+  "keywords": [
+    "react-native",
+    "expo-notifications",
+    "notifications",
+    "pushbase",
+    "push-notifications"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch"
+  },
+  "author": "Pushbase",
+  "license": "MIT",
+  "description": "SDK for Pushbase push notification service.",
+  "homepage": "https://docs.pushbase.dev/",
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*",
+    "expo-notifications": "*",
+    "expo-device": "*",
+    "expo-localization": "*",
+    "expo-secure-store": "*"
+  }
+}
